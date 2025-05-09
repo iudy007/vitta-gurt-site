@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VittaGurt - Iogurtes Naturais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>VittaGurt</h1>
+    <p>Iogurtes saudáveis e deliciosos direto da escola!</p>
+  </header>
+
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <span style="float: right; margin-right: 20px; color: white;">Carrinho: <span id="cart-count">0</span></span>
+  </nav>
+
+  <div class="container">
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="imgs/iorgut.png">
+          <h3>Iogurte de Morango</h3>
+          <p>Cremoso, natural e cheio de sabor.</p>
+          <a href="#" class="btn" onclick="addToCart('Iogurte de Morango')">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="product-card">
+          <img src="imgs/banana.jpeg">
+          <h3>Iogurte de Banana</h3>
+          <p>Feito com bananas frescas da região.</p>
+          <a href="#" class="btn" onclick="addToCart('Iogurte de Banana')">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="product-card">
+          <img src="imgs/natural.jpeg">
+          <h3>Iogurte Natural</h3>
+          <p>Perfeito para receitas ou consumir puro.</p>
+          <a href="#" class="btn" onclick="addToCart('Iogurte Natural')">Adicionar ao Carrinho</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Sobre a VittaGurt</h2>
+      <p>A VittaGurt nasceu como um projeto escolar, com o objetivo de criar um produto saudável, acessível e produzido pelos próprios alunos. Nossos iogurtes são feitos com carinho, responsabilidade e ingredientes naturais.</p>
+    </section>
+
+    <section id="depoimentos">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="testimonial">
+        <p>"O melhor iogurte que já provei! Sabor incrível e natural."</p>
+        <span>- Ana Clara</span>
+      </div>
+      <div class="testimonial">
+        <p>"Compro sempre na escola, muito gostoso e saudável."</p>
+        <span>- Roberto</span>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="whatsapp">
+      <h2>Fale com a gente no WhatsApp</h2>
+      <a href="https://wa.me/5500000000000" target="_blank" class="btn whatsapp-btn">
+        Enviar mensagem no WhatsApp
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 VittaGurt. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
